@@ -19,17 +19,17 @@ It consists in a single model with its CRUD functions implemented.
  ``` shell
  pip install DJango
  ```
- 2. Install DJango Rest Framework
+ 3. Install DJango Rest Framework
  ``` shell
  pip install djangorestframework
  ```
  
- After that, It is neccesary to start the migration, to create the table at MongoDB:
+ After that, We just have to migrate:
  ``` shell
  python manage.py migrate
  ```
  
- Finally, It would be a good idea to fill the table with some data. Import data from '' inside the folder ''. 
+ Finally, It would be a good idea to fill the table with some data. Import data from 'datosEjemplo.json' inside the folder 'Datos de ejemplo'. 
  
  **And that's It, We are ready to go!**
  
