@@ -17,7 +17,7 @@ It consists in a single model with its CRUD functions implemented.
  ```
  2. Install DJango
  ``` shell
- pip install DJango
+ pip install Django
  ```
  3. Install DJango Rest Framework
  ``` shell
