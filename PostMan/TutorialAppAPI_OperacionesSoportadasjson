@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "dfd63c77-f622-4a87-b421-455fc3c1c688",
+		"name": "TutorialAppAPI",
+		"description": "Probando funcionalidades básicas de la API\r\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET tutoriales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tutoriales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutoriales"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET tutorial por título",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tutoriales?titulo=naranja",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutoriales"
+					],
+					"query": [
+						{
+							"key": "titulo",
+							"value": "naranja",
+							"description": "el titulo del tutorial contiene la palabra naranja"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST tutorial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Como hacer un graffiti\",\r\n    \"descripcion\": \"Vamos a grafitear un poco.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/tutoriales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutoriales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT tutorial",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\" : \"Docker: como liarla parda\",\r\n    \"descripcion\" : \"Se vuelve a liar parda y se despublica\",\r\n    \"publicado\" : false\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/tutoriales/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutoriales",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET tutoriales publicados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tutoriales/publicados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tutoriales",
+						"publicados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE tutorial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE tutoriales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
